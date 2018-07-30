@@ -164,3 +164,7 @@ svg {
 .svg__line {
   opacity: 0.5;
 }
+
+.sectionHeader {
+  text-align: center;
+}
