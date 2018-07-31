@@ -13,12 +13,13 @@
 }
 
 #containerMain {
-  max-width: 960px;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
-  text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+min-height: 80vh;
+
 }
+
+
 
 .v-header {
   height: 100vh;
@@ -176,4 +177,8 @@ body {
 
 .page-footer{
 color: white;
+}
+
+#row2{
+  margin-top: 80px;
 }
