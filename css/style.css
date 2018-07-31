@@ -12,6 +12,14 @@
   text-align: center;
 }
 
+#containerMain {
+  max-width: 960px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
 .v-header {
   height: 100vh;
   display: flex;
@@ -164,4 +172,8 @@ body {
 #imgMain {
   vertical-align: middle;
   border-style: none;
+}
+
+.page-footer{
+color: white;
 }
