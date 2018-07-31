@@ -173,6 +173,8 @@ body {
 #imgMain {
   vertical-align: middle;
   border-style: none;
+  width: 140px;
+  height: 140px;
 }
 
 .page-footer{
