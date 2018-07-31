@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  
 }
 
 .container {
@@ -10,6 +11,7 @@
   padding-right: 1rem;
   margin: auto;
   text-align: center;
+  
 }
 
 #containerMain {
@@ -52,15 +54,29 @@ min-height: 75vh;
   transform: translate(-50%, -50%);
 }
 
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.5;
-  color: #333;
+  color: #333; 
   /*Use for no horizontal scroll bars 
     overflow-x:hidden; */
+    
+}
+
+.bodyHome {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  /* color: #333; */
+  /*Use for no horizontal scroll bars 
+    overflow-x:hidden; */
+    background-color: lightgray;
 }
 
 .header-overlay {
