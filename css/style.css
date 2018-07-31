@@ -182,3 +182,7 @@ svg {
   justify-content: center;
   align-items: center;
 }
+
+.featurette-divider {
+  margin: 5rem 0;
+}
