@@ -12,14 +12,6 @@
   text-align: center;
 }
 
-
-.containerSection {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: auto;
-  text-align: center;
-}
-
 .v-header {
   height: 100vh;
   display: flex;
@@ -165,24 +157,11 @@ body {
   transition: all ease 2s;
 }
 
-svg {
-  max-width: 100%;
+.rounded-circle {
+  border-radius: 50%!important;
 }
 
-.svg__line {
-  opacity: 0.5;
-}
-
-.sectionHeader {
-  text-align: center;
-}
-
-.sectionButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.featurette-divider {
-  margin: 5rem 0;
+#imgMain {
+  vertical-align: middle;
+  border-style: none;
 }
