@@ -189,22 +189,18 @@
 
 
     <!-- TEST -->
-    <div style="background-color: #54c545;">
-        <div class="container">
+    <div class="container">
+        <div style="background-color: #54c545;">
 
-            <!-- Grid row-->
-            <div class="row py-4 d-flex align-items-center">
+            <h2 class="text-center">
+                Image Gallery
+            </h2>
 
 
-
-            </div>
-            <!-- end row -->
 
         </div>
-        <!-- end img gallery container -->
+        <!-- end gallery div -->
     </div>
-
-
     <!-- END TEST -->
 
 
@@ -360,7 +356,7 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
         crossorigin="anonymous "></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
         // Logo animation effect to slidown 
@@ -368,6 +364,20 @@
             $('#logo').css('top', '0px');
         });
 
+
+        $('.clients').owlCarousel({
+            loop: true,
+            dots: false,
+            margin: 10,
+            autoplay: true,
+            autoplayTimeout: 1000,
+            autoplayHoverPause: true,
+            responsive: {
+                768: {
+                    items: 5
+                }
+            }
+        });
 
     </script>
 
