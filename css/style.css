@@ -200,3 +200,9 @@ color: white;
 #row2{
   margin-top: 80px;
 }
+
+/* used in futuristic effect typing */
+.heading {
+  color: rgb(234, 241, 243);
+  font-size: 1.5rem;
+}
