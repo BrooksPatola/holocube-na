@@ -571,6 +571,15 @@
 
         //end futuristic typing effect
 
+        //hide social media sidebar when user hits bottom of page
+        $(window).scroll(function () {
+            var Bottom = $(window).height() + $(window).scrollTop() >= $(document).height();
+            if (Bottom) {
+                $('.icon-bar').hide();
+            } else {
+                $('.icon-bar').show();
+            }
+        });
 
     </script>
 
