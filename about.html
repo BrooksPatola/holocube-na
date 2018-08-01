@@ -18,10 +18,6 @@
     <!-- Bootstrap-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
         crossorigin="anonymous">
-    <!-- Owl Carousel css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <!-- Owl Carousel theme -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <!--Custom Stylesheet-->
     <link type="text/css" rel="stylesheet" href="css/normalize.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -258,134 +254,12 @@
         crossorigin="anonymous "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
         crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
         // Logo animation effect to slidown 
         $(document).ready(function () {
             $('#logo').css('top', '0px');
         });
-
-        //owl carousel used for scrolling image gallery
-        $('.clients').owlCarousel({
-            loop: true,
-            dots: false,
-            margin: 10,
-            autoplay: true,
-            autoplayTimeout: 1000,
-            autoplayHoverPause: true,
-            responsive: {
-                768: {
-                    items: 5
-                }
-            }
-        });
-
-
-        //futuristic typing effect
-        const resolver = {
-            resolve: function resolve(options, callback) {
-                // The string to resolve
-                const resolveString = options.resolveString || options.element.getAttribute('data-target-resolver');
-                const combinedOptions = Object.assign({}, options, { resolveString: resolveString });
-
-                function getRandomInteger(min, max) {
-                    return Math.floor(Math.random() * (max - min + 1)) + min;
-                };
-
-                function randomCharacter(characters) {
-                    return characters[getRandomInteger(0, characters.length - 1)];
-                };
-
-                function doRandomiserEffect(options, callback) {
-                    const characters = options.characters;
-                    const timeout = options.timeout;
-                    const element = options.element;
-                    const partialString = options.partialString;
-
-                    let iterations = options.iterations;
-
-                    setTimeout(() => {
-                        if (iterations >= 0) {
-                            const nextOptions = Object.assign({}, options, { iterations: iterations - 1 });
-
-                            // Ensures partialString without the random character as the final state.
-                            if (iterations === 0) {
-                                element.textContent = partialString;
-                            } else {
-                                // Replaces the last character of partialString with a random character
-                                element.textContent = partialString.substring(0, partialString.length - 1) + randomCharacter(characters);
-                            }
-
-                            doRandomiserEffect(nextOptions, callback)
-                        } else if (typeof callback === "function") {
-                            callback();
-                        }
-                    }, options.timeout);
-                };
-
-                function doResolverEffect(options, callback) {
-                    const resolveString = options.resolveString;
-                    const characters = options.characters;
-                    const offset = options.offset;
-                    const partialString = resolveString.substring(0, offset);
-                    const combinedOptions = Object.assign({}, options, { partialString: partialString });
-
-                    doRandomiserEffect(combinedOptions, () => {
-                        const nextOptions = Object.assign({}, options, { offset: offset + 1 });
-
-                        if (offset <= resolveString.length) {
-                            doResolverEffect(nextOptions, callback);
-                        } else if (typeof callback === "function") {
-                            callback();
-                        }
-                    });
-                };
-
-                doResolverEffect(combinedOptions, callback);
-            }
-        }
-        //string to be displayed to user
-        const strings = [
-            'Holocube North America',
-            '3D Hologram and Holographic Displays',
-            'Contact Us for Your Next Project Today'
-        ];
-
-        let counter = 0;
-
-        const options = {
-            // Initial position
-            offset: 0,
-            // Timeout between each random character
-            timeout: 5,
-            // Number of random characters to show
-            iterations: 10,
-            // Random characters to pick from
-            characters: ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'x', 'y', 'x', '#', '%', '&', '-', '+', '_', '?', '/', '\\', '='],
-            // String to resolve
-            resolveString: strings[counter],
-            // The element
-            element: document.querySelector('[data-target-resolver]')
-        }
-
-        // Callback function when resolve completes
-        function callback() {
-            setTimeout(() => {
-                counter++;
-
-                if (counter >= strings.length) {
-                    counter = 0;
-                }
-
-                let nextOptions = Object.assign({}, options, { resolveString: strings[counter] });
-                resolver.resolve(nextOptions, callback);
-            }, 1000);
-        }
-
-        resolver.resolve(options, callback);
-
-        //end futuristic typing effect
 
         //hide social media sidebar when user hits bottom of page
         $(window).scroll(function () {
