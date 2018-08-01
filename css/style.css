@@ -206,3 +206,15 @@ color: white;
   color: rgb(234, 241, 243);
   font-size: 1.5rem;
 }
+
+/* remove background and border of dropdown menu */
+#transparent{
+  background: none;
+  border: none;
+}
+
+/* remove default background color when hovering dropdown menu item*/
+.dropdown-menu a:hover{
+  background-color: transparent;
+}
+
