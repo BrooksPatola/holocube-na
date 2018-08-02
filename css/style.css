@@ -218,3 +218,21 @@ color: white;
   background-color: transparent;
 }
 
+svg
+{
+  cursor:pointer;   
+}
+svg:hover #gear {
+  animation: runGear 4s linear infinite;
+}
+
+@keyframes runGear {
+    0% {
+        transform: rotate(0deg);
+        transform-origin: 330.5px 351.5px;
+    }
+    100% {
+       transform: rotate(360deg);
+       transform-origin: 332px 350px;
+    }
+}
