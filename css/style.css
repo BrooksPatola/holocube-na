@@ -218,6 +218,10 @@ color: white;
   background-color: transparent;
 }
 
+
+
+
+
 svg
 {
   cursor:pointer;   
@@ -236,3 +240,5 @@ svg:hover #gear {
        transform-origin: 332px 350px;
     }
 }
+
+
