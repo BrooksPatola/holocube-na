@@ -224,7 +224,7 @@ color: white;
 
 svg
 {
-  cursor:pointer;   
+  cursor:pointer;  
 }
 svg:hover #gear {
   animation: runGear 4s linear infinite;
