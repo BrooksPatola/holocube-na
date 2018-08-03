@@ -226,6 +226,8 @@ svg
 {
   cursor:pointer;  
 }
+
+/* for services gear animation */
 svg:hover #gear {
   animation: runGear 4s linear infinite;
 }
@@ -239,6 +241,34 @@ svg:hover #gear {
        transform: rotate(360deg);
        transform-origin: 332px 350px;
     }
+}
+
+/* for eye animation in about */
+svg rect, svg #eye, svg #pupil {
+  transition: all 0.2s ease;
+}
+svg:hover #eye, svg:hover #pupil {
+  animation: squeeze 2s infinite;
+  fill: orange;
+}
+svg:hover rect {
+  fill: orange;
+}
+@keyframes squeeze {
+  10% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
+  13% {
+    transform: translateY(69px) scaleY(.3)
+  }
+  20% {
+    animation-timing-function: ease-out;
+  }
+  21% {
+    transform: none;
+    animation-timing-function: ease-in;
+  }
 }
 
 
