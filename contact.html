@@ -108,7 +108,10 @@
 
         <div class="container">
 
-            <h1>CONTACT FORM TEST</h1>
+            <div class="jumbotron">
+                <h1>CONTACT FORM TEST</h1>
+            </div>
+
             <div class="row">
                 <div class="col-sm-6">
                     <form action="mail.php" method="post">
@@ -124,6 +127,23 @@
                         <br>
                         <input class="btn btn-success" type="submit" name="submit" value="Submit">
                     </form>
+                </div>
+                <div class="col-sm-6">
+                    <h3>My Google Maps Demo</h3>
+                    <!--The div element for the map -->
+                    <div id="map"></div>
+                    <script>
+                        // Initialize and add the map
+                        function initMap() {
+                            // The location of Uluru
+                            var uluru = { lat: -25.344, lng: 131.036 };
+                            // The map, centered at Uluru
+                            var map = new google.maps.Map(
+                                document.getElementById('map'), { zoom: 4, center: uluru });
+                            // The marker, positioned at Uluru
+                            var marker = new google.maps.Marker({ position: uluru, map: map });
+                        }
+                    </script>
                 </div>
             </div>
         </div>
@@ -298,7 +318,8 @@
         crossorigin="anonymous "></script>
     <!-- animate it -->
     <!--   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/css3-animate-it/1.0.3/js/css3-animate-it.min.js"></script> -->
-
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChehnAaVarUyjAzB1eoWfqMXWD9jr97pg&callback=initMap">
+    </script>
     <script>
         // Logo animation effect to slidown 
         $(document).ready(function () {
