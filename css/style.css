@@ -70,7 +70,7 @@ body {
   color: #333; 
   /*Use for no horizontal scroll bars 
     overflow-x:hidden; */
-    
+
 }
 
 .bodyHome {
@@ -328,12 +328,27 @@ svg:hover rect {
   }
 }  */
 
+/* -------------------------------- 
+Main Components 
+-------------------------------- */
+@media only screen and (min-width: 1050px) {
+  body[data-hijacking="on"] {
+    overflow: hidden;
+  }
+}
+
 .cd-section {
   height: 100vh;
 }
-.cd-section:first-of-type > div {
-  background-color: #2b334f;
+.cd-section h2 {
+  line-height: 100vh;
+  text-align: center;
+  font-size: 2.4rem;
 }
+.cd-section:first-of-type > div {
+  background-color: #1b4ef5;
+}
+
 .cd-section:nth-of-type(2) > div {
   background-color: #2e5367;
 }
