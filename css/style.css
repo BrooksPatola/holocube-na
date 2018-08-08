@@ -21,7 +21,13 @@ min-height: 75vh;
 
 }
 
+#aboutUs {
+  min-height: 25vh;
+}
 
+#services{
+  min-height: 75vh;
+}
 
 .v-header {
   height: 100vh;
@@ -244,7 +250,7 @@ svg:hover #gear {
 }
 
 /* for eye animation in about */
-svg rect, svg #eye, svg #pupil {
+/* svg rect, svg #eye, svg #pupil {
   transition: all 0.2s ease;
 }
 svg:hover #eye, svg:hover #pupil {
@@ -269,7 +275,7 @@ svg:hover rect {
     transform: none;
     animation-timing-function: ease-in;
   }
-}
+} */
 
 /* Style inputs with type="text", select elements and textareas */
  input[type=text], select, textarea {
@@ -321,5 +327,4 @@ svg:hover rect {
       column-count: 5;
   }
 }  */
-
 
