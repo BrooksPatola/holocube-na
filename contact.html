@@ -131,17 +131,21 @@
                 <div class="col-sm-6">
                     <h3>My Google Maps Demo</h3>
                     <!--The div element for the map -->
-                    <div id="map"></div>
+                    <div id="map">
+
+
+
+                    </div>
                     <script>
                         // Initialize and add the map
                         function initMap() {
-                            // The location of Uluru
-                            var uluru = { lat: -25.344, lng: 131.036 };
-                            // The map, centered at Uluru
+                            // The location of Holocube
+                            var holocube = { lat: 43.683, lng: -79.592 };
+                            // The map, centered at Holocube
                             var map = new google.maps.Map(
-                                document.getElementById('map'), { zoom: 4, center: uluru });
-                            // The marker, positioned at Uluru
-                            var marker = new google.maps.Marker({ position: uluru, map: map });
+                                document.getElementById('map'), { zoom: 12, center: holocube });
+                            // The marker, positioned at Holocube
+                            var marker = new google.maps.Marker({ position: holocube, map: map });
                         }
                     </script>
                 </div>
