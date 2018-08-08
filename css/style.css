@@ -305,8 +305,8 @@ svg:hover rect {
       column-count: 3;
   }
 }
-
-/*@media (min-width: 62em) {
+/*
+@media (min-width: 62em) {
   .card-columns {
       -webkit-column-count: 4;
       -moz-column-count: 4;
