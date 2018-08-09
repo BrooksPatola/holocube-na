@@ -21,13 +21,6 @@ min-height: 75vh;
 
 }
 
-#aboutUs {
-  min-height: 25vh;
-}
-
-#services{
-  min-height: 75vh;
-}
 
 .v-header {
   height: 100vh;
@@ -328,36 +321,48 @@ svg:hover rect {
   }
 }  */
 
+
 /* -------------------------------- 
-Main Components 
+Main Page 
 -------------------------------- */
-@media only screen and (min-width: 1050px) {
-  body[data-hijacking="on"] {
-    overflow: hidden;
-  }
+#aboutUs {
+height: 25vh;
+
 }
 
-.cd-section {
+#services{
+
+}
+
+#service1{
   height: 100vh;
-}
-.cd-section h2 {
-  line-height: 100vh;
-  text-align: center;
-  font-size: 2.4rem;
-}
-.cd-section:first-of-type > div {
-  background-color: #1b4ef5;
+  background-color: rgb(62, 69, 117);
 }
 
-.cd-section:nth-of-type(2) > div {
-  background-color: #2e5367;
-}
-.cd-section:nth-of-type(3) > div {
+#service2{
+  height: 100vh;
   background-color: #267481;
+  opacity: 0.2;
 }
-.cd-section:nth-of-type(4) > div {
-  background-color: #fcb052;
+
+#service3{
+  height: 100vh;
+  background-color: #e6c0eb;
 }
-.cd-section:nth-of-type(5) > div {
-  background-color: #f06a59;
+
+#service4{
+  height: 100vh;
+  background-color: #50414f;
 }
+#service5{
+  height: 100vh;
+  background-color: #764a77;
+}
+#service6{
+  height: 100vh;
+  background-color: #18bb85;
+}
+
+
+
+
